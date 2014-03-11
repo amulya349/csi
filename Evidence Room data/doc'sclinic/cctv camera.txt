@@ -1,0 +1,14 @@
+Closed-circuit television (CCTV) cameras can produce images or 
+recordings for surveillance[1] purposes, and can be either video cameras, 
+or digital stills cameras. Marie Van Brittan Brown 
+was the inventor of the CCTV camera.
+
+
+These cameras do not require a video capture card because they 
+work using a digital signal which can be saved directly to a computer. 
+The signal is compressed 5:1, but DVD quality can be achieved with more 
+compression (MPEG-2 is standard for DVD-video, and has a higher compression 
+ratio than 5:1, with a slightly lower video quality than 5:1 at best, and is 
+adjustable for the amount of space to be taken up versus the quality of picture 
+needed or desired). The highest picture quality of DVD is only slightly lower 
+than the quality of basic 5:1-compression DV.

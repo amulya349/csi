@@ -1,0 +1,42 @@
+----------------------------FOR AMUL COOL-------------------------------------------------------
+
+
+-map divs - to open dynamically
+
+-the divs(hidden jpgs) on the images - to be distinguished 
+   between 
+ what is authentic evidence, and which one is a mislead,
+  and should somehow effect the player's advancement
+
+   It may be such that, the player doesnt get to go to
+   furthur level unless he/she has collected all the 
+   correct evidences from that level.
+
+                      (Or) 
+  
+  what you can do is, let him/her collect whatever
+   evidences he/she needs to collect from each level
+                 
+               (may be max 5),
+   
+   but at the end, he/she should not be able to get to
+   encode.html to decode the encryption unless
+   he/she collects ALL the right evidences at EACH level.
+
+  and the WINNER is he/she who decodes that encode wala 
+  page too.
+ 
+
+- evidences on evidence page to be opened dynamically
+
+------------------------FOR SID-------------------------------------------------------------------
+
+- To add page linked from encode.html, that says that Y is the culprit.
+
+
+
+   
+   
+   
+
+

@@ -1,0 +1,59 @@
+
+			h2{
+				text-align: center;
+				color: red;
+			}
+			
+			.custom{
+				cursor: url( css/knife.png),auto;
+			}
+			 
+			header{
+				background:url('css/c.s.png');
+				background-repeat:no-repeat;
+				background-position: center;
+			}
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #212121;
+			}
+			a {
+				color: #09f;
+			}
+			a:hover {
+				text-decoration: none;
+			}
+			
+			#bloodsample
+			{
+			background:url('Evidence Room data/deadstreetman/bloodsampleanalysis.jpg');
+			background-repeat:no-repeat;
+			height:100%;
+			width:100%;
+			left:20%;
+			top:30%;
+			
+			}
+			
+			#dissoc
+			{
+			position:relative;
+			background:url('Evidence Room data/deadstreetman/dissociative-disorder.jpg');
+			background-repeat:no-repeat;
+			height:100%;
+			width:100%;
+			
+			
+			}
+			
+			#fingerprint
+			{
+			background:url('Evidence Room data/deadstreetman/Fingerprint analysis.jpg');
+			background-repeat:no-repeat;
+			
+			
+			}
+			
+			
+		

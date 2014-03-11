@@ -1,0 +1,3 @@
+-fingerprint of doc
+-phone memo containing the reminder " to return coat"
+-coat

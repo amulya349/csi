@@ -1,0 +1,107 @@
+26/12/13
+
+Registration Page - done
+Layouts of other pages.
+
+22-1, Amulya
+
+- Changed the menu item about to intro, as it is more apt to content.
+- Created the file intro.html and linked it to menubar.html page
+- Changed filenames of CSI Menubar to menubar.html and CSE Registration Page into register.html
+- MAP links added, pages linked to images.
+- AUTOPSY ROOM ( 1 ) updated.
+
+1-2, Amulya
+-added current tym
+  
+long ago-Sneha 
+-made the CSI main pge, added links to menubar
+-Map links defined( to be modified)
+
+around end Jan and 1 Feb-Sneha
+
+-Made a folder called "Intropage" and added "themes" and "intropage" to the 
+  CSI main page folder(with slider)
+
+-Added info about the man who died on the street ( and made 2 slides with Photoshop)
+
+-Added html file, CSIntro in "Menubar with slider" folder ( plz dont delete any folders from 
+  there, as they are linked to the CSIntro.html file )
+
+-Embedded  a slider on the "CSIntro" page.
+
+- Made folder called " pics to be added", 
+  to embed into the images of various places on the "MAP"
+
+- Made modifications with the pics, to hide evidences (on "imagesofmap" folder using photoshop)
+
+-changed the skin of the CSImain page slider from "azure" to red.
+
+-Removed the menubar from CSImain page(with slider)
+
+-Added thumbs to the slider on main page and linked it in html.
+
+-Added slider on intro page of the CSIMenubar (that Amulya recently linked files to)
+
+2/2, Amulya
+- Added time to all d pages. 
+
+7-2-1 Sneha:
+- added evidence attributes on the notepads in the path images/slides/..  
+
+7-2 Amulya
+-Added Menubar to CSIIntro page (new one is CSIIntro1.html. Unable to fix margins.)
+  
+
+8-2 Sneha
+-corrected position of menubar on csiintro1.html
+
+9-2 Sneha
+
+- Added hover effect on map ,to make div visible onmouseover, BUT unable to use counter to dynamically open div
+    (IMPORTANT and TO BE DONE ASAP)
+
+- renamed csiintro1.html as the original CSIintro.html, and linked it to CSI Menu bar.html 
+   (as "it begins here" on the menu)
+
+-linked CSI Menu bar.html to CSIintro.html (as "Home" on the menu)
+
+-Added Menubar on each item(pic) linked on map.html(NOTE: c'death page requires major
+  modifications, other pages also require some)
+
+- Added jQuery to register.html to 
+  highlight "current" field
+
+10-2 Sneha
+- Added folder called Evidence Room data and added 
+  sub-folders to it(with jpgs and psds)
+
+
+- Made slides in photoshop for evidence lab 
+
+- Got psd files from Siddharth regarding 
+  the forensic reports (NOTE: Need to convert to png/pdf 
+   and link to different map pics )
+
+11-2 Sneha
+
+- created l1.html,l2.html.....l5.html, and inserted 
+  slider in them for different levels.(NOTE: need to open
+   them dynamically as per level )
+
+- Added dummy div called "interview" in doctor's 
+  clinic.html (NOTE: To be modified, as questions are
+   to be added, per level )
+  
+- Added autopsyinfo.html and slider to it.
+
+- Updated the interview div in doctor's clinic.html and
+  added all interview questions
+
+- Folder called psdedited is added and in it, pngs of 
+   various picture links are added
+
+- c'sdeath.html is updated with png links embedded on main 
+   jpg div (cdeath)
+
+

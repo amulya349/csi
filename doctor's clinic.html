@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+    background-color:#212121;
+} 
+li {
+				color: #09f;
+			}
+div#clinic
+	 {
+	  
+	 background:url('imagesofmap/d2.jpg');
+	background-repeat:no-repeat;
+				background-position:center;
+				position:relative;
+				left:-15%;
+				top:10%;
+				height:500px;
+
+	 }
+	 
+	 #daudio{
+	 background:url('psdedited/tapeset.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left: 520px;
+			top: 220px;
+			opacity:0.7;
+			width:5%;
+			height:5%;
+	 
+	 }
+	 
+	 #dcctv
+	 {
+	 background:url('psdedited/cctv_xy.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left: 270px;
+			top: 360px;
+			opacity:0.6;
+			width:10%;
+			height:10%;
+	 }
+	 
+	 #dcigar
+	 {
+	 background:url('psdedited/cigerrete_box.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left: 180px;
+			top: 290px;
+			opacity:0.3;
+			width:10%;
+			height:10%;
+	 }
+	 
+	 #ddoc
+	 {
+	 background:url('psdedited/papers_doc.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left: 670px;
+			top: 260px;
+			opacity:0.3;
+			width:10%;
+			height:10%;
+	 
+	 }
+	 
+	 #dknife
+	 {
+	 background:url('psdedited/surgical_knife.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left:370px;
+			top: 210px;
+			opacity:0.6;
+			width:10%;
+			height:10%;
+	 
+	 }
+	 
+	 #dlandline
+	 {
+	 background:url('psdedited/landline_marker.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left:390px;
+			top: 50px;
+			opacity:0.6;
+			width:10%;
+			height:10%;
+	 
+	 }
+	 
+	 #dnote
+	 {
+	 background:url('psdedited/notedoc.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left:770px;
+			top: 140px;
+			opacity:0.1;
+			width:10%;
+			height:10%;
+	 
+	 }
+	 
+	 .custom{
+				cursor: url( css/knife.png),auto;
+			}
+			
+	a {
+				color: #09f;
+			}
+			a:hover {
+				text-decoration: none;	
+}
+
+
+p
+{
+color: red;
+}
+
+#nav > li > a{
+		cursor: url( css/knife.png),auto;
+		}
+		
+		#nav > li > ul > li > a {
+		cursor: url( css/knife.png),auto;
+		}
+</style>
+ <link href="css/layout.css" rel="stylesheet" type="text/css" />
+ <link href="css/menu.css" rel="stylesheet" type="text/css" />
+<link href="css/sidebar.css" rel="stylesheet" type="text/css" />
+		<script src="scripts/script.js">
+			
+		</script>
+		<script>
+			function DisplayTime(){
+				if (!document.all && !document.getElementById)
+					return
+				timeElement=document.getElementById? document.getElementById("curTime"): document.all.tick2
+				var CurrentDate=new Date()
+				var hours=CurrentDate.getHours()
+				var minutes=CurrentDate.getMinutes()
+				var seconds=CurrentDate.getSeconds()
+				var DayNight="PM"
+				if (hours<12) DayNight="AM";
+				if (hours>12) hours=hours-12;
+				if (hours==0) hours=12;
+				if (minutes<=9) minutes="0"+minutes;
+				if (seconds<=9) seconds="0"+seconds;
+				var currentTime=hours+":"+minutes+":"+seconds+" "+DayNight;
+				timeElement.innerHTML="<font style='font-family:verdana, arial,tahoma;font-size:12px;color:#E25984; font-weight:bold;'>"+currentTime+"</b>"
+				setTimeout("DisplayTime()",1000)
+			}
+			window.onload=DisplayTime
+</script>
+</head>
+<body onClick="">
+	<span id=curTime ></span>
+	<div class="custom">
+		<div class="container">
+
+					 
+			
+				<ul id="nav">
+				    <li><a href="CSI Menu bar.html">Home</a></li>
+					
+					<li><a class="hsubs" href="map.html">The Map</a>
+						
+					</li>
+					<li><a class="hsubs" href="evlab.html">Evidence Lab</a>
+						
+					</li>
+					<li><a href="credit.html">Site Credits</a></li>
+					
+					<div id="csi"></div>
+				</ul>				
+				<div id="menu" style="background-color:#191A1C;width:150px;float:right;text-align:center;border-style:solid; border-color:white;margin:5px;top:200px;position:absolute;right:250px;">
+					<p style = "color: white;">Evidence List</p>
+					<ul id="myList" style = "padding:5px;list-style:none;">
+						
+					</ul>
+					<input type = "button" onclick="submit_evid(41);window.location='./CSI Menu bar.html';" value="Submit" />
+				</div>
+<div id="try" >
+</div>                                     
+<div id="clinic">
+	<div id="daudio" style="cursor:pointer;" class = "1" onclick="add_evid41(this)" ><span style="display:none;">Stack of Tapes</span></div>
+	<div id="dcctv" class = "2" style="cursor:pointer;" onclick="add_evid41(this)" ><span style="display:none;">CCTV</span></div>
+	<div id="dcigar" class = "3" style="cursor:pointer;" onclick="add_evid41(this)" ><span style="display:none;">Cigarette Box</span></div>
+	<div id="ddoc" class = "4" style="cursor:pointer;" onclick="add_evid41(this)" ><span style="display:none;">Documents</span></div>	
+	<div id="dknife" class = "5" style="cursor:pointer;" onclick="add_evid41(this)" ><span style="display:none;">Surgical Knife</span></div>
+	<div id="dlandline" class = "6" style="cursor:pointer;" onclick="add_evid41(this)" ><span style="display:none;">Call Logs</span></div>	
+	<div id="dnote" class = "7" style="cursor:pointer;" onclick="add_evid41(this)" ><span style="display:none;">Note</span></div>
+
+
+</div> <!--end of division container-->
+<div id="Interview" style="margin-top:100px;">
+    <div id="l2" style="padding:20px;border:3px solid red;display:none;">
+		<p style="text-decoration:underline;margin-bottom:10px;">LEVEL 2 (Detective Venkat Reddy visits doctor, as doctor hires him)</p>
+		<p>
+			<b>Venkat: So, how was the victim, Vikrant Sharma your acquaintance??</b><br>
+			Dr.Anand: He was a regular patient of mine and had been suffering from dissociative disorder for a while <br>
+			<b>Venkat: Did anything about him seem unusual to you?? </b><br>
+			Dr.Anand: No, nothing in particular, just his disoriented behavior with people.<br>
+			<b>Venkat: Do you have any idea of him having been involved in any criminal offense till now??</b><br>
+			Dr.Anand: A while ago, while he was coming for therapy, he got caught up in a minor tiff with some cop and there was a court 
+			procedure against him.<br>
+		</p>
+	</div>  
+	<div id="l3" style="padding:20px;border:3px solid red;margin-top:20px;display:none;">
+		<p style="text-decoration:underline;margin-bottom:10px;">LEVEL 3 ( Ex-Cop visits doctor) </p>
+		<p>
+			<b> Ex-cop: Sorry to know about Agent Venkat, he was an old friend and colleague of mine. From what I gathered, he was following
+			someone when this mishap occured. I brought these files along
+			to guarantee that we had indeed worked togeteher on many cases before and solved quite a few of them(passes documents
+			to Dr.Anand, and gives his identity proof of being an Ex-Cop ). I would like to take charge of this case from hereon, taking
+			Venkat Reddy's place, and since i'm doing this for a friend, i won't charge you anything</b><br>
+			Dr.Anand: (hesitates) I shall think over it. <br>
+			<b> Ex-cop: Very well then, i'll take leave. In case you need to contact me (passes on his card, and thinks to himself
+			that he'll track this case , with or without the consent of the Dr.Anand )<br></b>
+		</p>
+	</div>
+	<div id="l3" style="padding:20px;border:3px solid red;margin-top:20px;display:none;">
+		<p style="text-decoration:underline;margin-bottom:10px;"> LEVEL 4 ( Ex-cop conversation over phone) </p>
+		<p>
+			<b> Dr.Anand: I was going through information about you, and have come to know you better than the cops investigating this case. 
+			I need
+			to tell you that 2 detectives have regularly interrogated me on this , before , on regular intervals.(Gives hint on
+			Mahesh Arora and Satyam Seth)</b><br>
+			Ex-cop: I see( thinking to himself about what information he had collected about Mahesh and Satyam from his contacts
+			in the police station)<br>
+			<b>Dr.Anand: Someone has just now attempted to attack me. I was just about to lock my front door, when this happened.
+			What bugging me is that just before the lights went out, i caught a glimspse of someone familiar, but was unable 
+			to make out who it was. </b><br>
+			Ex-Cop: Was it a man or a woman? <br>
+			<b> Dr.Anand :(Shivering from fear, long pause) I can't be sure . It..it might have been anyone, or my
+			eyes must have been playing tricks on me </b>
+		</p>
+	</div>
+</div>
+</div> <!--end of division custom-->
+	<script>
+		switch(localStorage.level)
+		{
+			case '4' : document.getElementById('l4'),style.css({display : 'block'});
+			case '3' : document.getElementById('l3'),style.css({display : 'block'});
+			case '2' : document.getElementById('l2'),style.css({display : 'block'});
+			default : break;
+		}
+	</script>
+
+</body>
+</html>

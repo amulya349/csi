@@ -1,0 +1,16 @@
+    -Evidence on each point on map;
+    -Encryption puzzle
+    -Map html properties - onmouseover
+    -Photoshop editing on each pic,according to requirement-partially done
+    -Onclick properties on each image( for player to collect evidence)
+    -Backend
+    -Editing the links on CSI main page
+    - Textbox on each page
+    -Evidence lab data
+    -Effects on each page( pS )
+
+------------------------IMPORTANT--------------------------------------------
+ - THE PLAYER HAS TO BE NOTIFIED FROM TIME TO TIME ABOUT OCCURANCES , SUCH AS,
+   CHARACTER SWITCH FROM C to Ex-Cop.
+
+ 

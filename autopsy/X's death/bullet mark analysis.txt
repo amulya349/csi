@@ -1,0 +1,7 @@
+Ballistic fingerprinting:
+
+Ballistic fingerprinting refers to a set of forensic techniques that rely on
+ marks that firearms leave on bullets to match a bullet to the gun it was fired with.
+[1] It is a subset of forensic ballistics (the application of ballistics to legal 
+questions) and internal ballistics (the study of events between the firing of a gun 
+and the bullet leaving the barrel).[1]

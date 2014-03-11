@@ -1,0 +1,13 @@
+1.locker ( may contain personal diary of doctor)
+2.//cctv camera ( all ongoing proceedings wth patients)
+3.//papers on desk ( mislead)
+4.//surgical knife (mislead)
+5.machine on chair shows that it was used recently(mislead)
+6.pen on the flor near the desk(mislead)
+7.fax machine(recent fax from XY office)
+8.//same cigrette ( they match the ones, found in C's residence)
+9.//landline phn call logs( used to find the number and frequency of contacts)
+
+10.blood marks/stains on wall (mislead)
+11.// note inside coat pocket
+12.// Audiotape

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" >
+    <head>
+		<style>
+			h2{
+				text-align: center;
+				color: red;
+			}
+			
+			.custom{
+				cursor: url( css/knife.png),auto;
+			}
+			 
+			header{
+				background:url('css/c.s.png');
+				background-repeat:no-repeat;
+				background-position: center;
+			}
+			body{
+				margin: 0;
+				padding: 0;
+				background-color: #212121;
+			}
+			a {
+				color: #09f;
+			}
+			a:hover {
+				text-decoration: none;
+			}
+			
+			div#sliderFrame{
+				margin: 40px auto;
+				max-width: 1000px;
+
+			}
+            
+			h3{
+			margin:8px,auto;
+			color: red;
+			text-align: center;
+			}
+		</style>
+        <meta charset="utf-8" />
+        <link href="css/layout.css" rel="stylesheet" type="text/css" />
+        <link href="css/menu.css" rel="stylesheet" type="text/css" />
+		<link href="css/sidebar.css" rel="stylesheet" type="text/css" />
+		<link href="themes/9/js-image-slider.css" rel="stylesheet" type="text/css" />
+		<script src="themes/9/js-image-slider.js" type="text/javascript"></script>
+		    
+		<!--localStorage.a ='sneha';
+		alert (localStorage.a);-->
+		<script>
+			function DisplayTime(){
+				if (!document.all && !document.getElementById)
+					return
+				timeElement=document.getElementById? document.getElementById("curTime"): document.all.tick2
+				var CurrentDate=new Date()
+				var hours=CurrentDate.getHours()
+				var minutes=CurrentDate.getMinutes()
+				var seconds=CurrentDate.getSeconds()
+				var DayNight="PM"
+				if (hours<12) DayNight="AM";
+				if (hours>12) hours=hours-12;
+				if (hours==0) hours=12;
+				if (minutes<=9) minutes="0"+minutes;
+				if (seconds<=9) seconds="0"+seconds;
+				var currentTime=hours+":"+minutes+":"+seconds+" "+DayNight;
+				timeElement.innerHTML="<font style='font-family:verdana, arial,tahoma;font-size:12px;color:#E25984; font-weight:bold;'>"+currentTime+"</b>"
+				setTimeout("DisplayTime()",1000)
+			}
+			window.onload=DisplayTime
+		</script>
+    </head>
+    <body>
+		<span id=curTime ></span>
+		<div class="custom">
+			<header>
+			  <!-- <h2> CRIME SCENE INVESTIGATION (C.S.I) </h2>-->
+				
+			</header>
+			
+			
+		   <div class="container">
+
+					 
+			
+				<ul id="nav">
+				    <li><a href="CSI Menu bar.html">Home</a></li>
+					<li><a class="hsubs" href="#">Autopsy Room</a>
+						<ul class="subs">
+							<li><a href="Xinvestigate.html"> 1</a></li>
+							<li><a href="#"> 2</a></li>
+							
+						</ul>
+					</li>
+					<li><a class="hsubs" href="map.html">The Map</a>
+						
+					</li>
+					<li><a class="hsubs" href="#">Evidence Lab</a>
+						<ul class="subs">
+							<li><a href="l1.html">level 1</a></li>
+							<li><a href="l2.html">level 2</a></li>
+							<li><a href="l3.html">level 3</a></li>
+							<li><a href="l4.html">level 4</a></li>
+							<!--<li><a href="#">level 5</a></li>-->
+						</ul>
+					</li>
+					<li><a href="#">Crime Scene</a></li>
+					<li><a href="#">Suspects</a></li>
+					<div id="csi"></div>
+				</ul>				
+			
+			<div id="sliderFrame">
+				<div id="slider">
+					<a class="lazyImage" href="Evidence Room data/C's residence/gps-tracker.jpg">gp</a>
+					<a class="lazyImage" href="Evidence Room data/C's residence/pistol details.jpg" >p</a>
+				   <a class="lazyImage" href="Evidence Room data/doc'sclinic/cctv-cam.jpg" >cc</a>
+					<!--<a class="lazyImage" href="imagesofmap/d2.jpg" >csi</a>
+					<a class="lazyImage" href="imagesofmap/p1.jpg" >pdeath</a>-->
+				</div>
+			</div>
+			
+				<h3><b> * mouseover the slide to pause </b></h3>
+		</div>
+	 </div>
+	     
+   </body>
+</html>

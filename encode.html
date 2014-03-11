@@ -1,0 +1,20 @@
+<html lang="en">
+<title>
+Crime Scene Investigation:ENCODE
+</title>
+<script type="text/css"></script>
+<script>
+function newDoc()
+  {
+  window.location.assign(document.abc.pwd.value+".html")
+  }
+</script>
+<body style="background-color:rgb(39,36,36);">
+<div style="background-color:rgb(39,36,36);color:rgb(204,204,204);font-size:50px;text-align:center;margin-top:15%;">The File Is Encrypted<br>Enter The<br>Password</div>
+<form name="abc" style="text-align:center"><br>
+<input type="password" name="pwd" onkeypress='return event.charCode >= 48 && event.charCode <= 57' style="margin:5px;height:40px;width:120px;">
+
+<input type="button" value="Enter" onclick="newDoc()" style="height:40px;width:60px;margin:5px">
+</form>
+</body>
+</html>

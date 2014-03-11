@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style type="text/css">
+		h3{
+		color: red;
+		}
+ 
+            body {font-family:Arial, Sans-Serif; background-color:#212121; color:#fff;}
+ 
+            #container {width:300px; margin:0 auto;
+			
+			
+
+			}
+ 
+            form label {display:inline-block; width:140px;}
+ 
+           
+            form input[type="text"],
+            form input[type="password"],
+            form input[type="email"] {width:160px;}
+ 
+            form .line {clear:both;}
+            form .line.submit {text-align:center;}
+			p{
+			color: red;
+			}
+ 
+        </style>
+		
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+  $("input").focus(function(){
+    $(this).css("background-color","#888888");
+  });
+  $("input").blur(function(){
+    $(this).css("background-color","#ffffff");
+  });
+localStorage.level = 1;
+
+});
+</script>
+
+    </head>
+    <body>
+        <div id="container">
+            <form action="Servlet/controllerRegister" method="post">
+                <h3>CSI Registration</h3>
+                			
+                <div class="line"><label for="player1">Player 1: </label><input type="text" id="name1" name="name1" /></div><br>
+                <div class="line"><label for="player 2">Player 2: </label><input type="text" id="name2" name="name2" /></div><br>
+                <div class="line"><label for="email">Email : </label><input type="email" id="email" name="email" /></div><br>
+                <div class="line"><label for="tel">Mobile Number: </label><input type="text" id="tel" name="phoneNo" /></div><br>
+                <div class="line submit"><input type="submit" value="Submit" /></div><br>
+ 
+                
+            </form><p><b> *All fields are compulsory </b></p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,38 @@
+c'death- authentic : divs cdcellphn, cdblastres,
+                          cdnameplate, cdcctv
+            fake: div cdskid
+
+cresidence  -fake: divs cresbutton
+                        cresgun,cresdrawer, creslocker
+                        
+
+             
+            -true: divs cresnote,cresdiary,crescctv,
+                        crescigar,
+                        cresmemcard
+
+
+doctor'sclinic- true: divs daudio, dcigar,dnote, ddoc
+                
+                fake: divs dknife, dcctv,dlandline
+
+p'sdeath:  true: divs pwiring,pdoc
+           
+           fake: all the rest divs
+
+
+
+psychodeath:  true-divs psyfinger,psycoat,psyphone
+
+              fake: The rest divs
+
+xyoffice :  true-divs xydoc, xycctv, xyfingerprint
+
+            fake- The rest divs
+
+xinvestigate(autopsy room) : true-divs  Xbullet, Xwatch
+                                  ,Xdocument
+
+                             false: The Rest
+
+-------------------------------------------------------

@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<style>
+
+		body{
+			background-color:#212121;
+		} 
+		.custom{
+				cursor: url( css/knife.png),auto;
+			}
+		
+		div#cdeath
+			{
+				background:url('imagesofmap/cdeath.jpg');
+				background-repeat:no-repeat;
+				background-position:center;
+				position:relative;
+				left:-15%;
+				top:10%;
+				height:500px;
+			}
+			a {
+				color: #09f;
+			}
+			a:hover {
+				text-decoration: none;
+			}
+			
+			
+			
+			#cdblastres
+			{
+			background:url('psdedited/blast_residue.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left: 210px;
+			top: 380px;
+			opacity:0.3;
+			width:10%;
+			height:10%;
+			}
+			 
+			 
+			#cdcctv
+			{
+			background:url('psdedited/cctvpic.png');
+			background-repeat: no-repeat;
+			position:relative;
+			left: 170px;
+			top: 20px;
+			opacity:0.4;
+			width:10%;
+			height:10%;
+			}
+			
+			 
+			#cdnameplate
+			{
+			background:url('psdedited/name_plate.png');
+			background-repeat: no-repeat;
+			position:relative;
+			left: 540px;
+			top: 270px;
+			opacity:0.2;
+			width:10%;
+			height:10%;
+			}
+		
+		
+		   #cdcellphn
+		   { 
+		   background:url('psdedited/cellphn_street.png');
+			background-repeat: no-repeat;
+			position:relative;
+			left: 510px;
+			top: 100px;
+			opacity:0.2;
+			width:10%;
+			height:10%;
+			}
+		
+		   
+		   #cdskid
+		   { 
+		   background:url('psdedited/skidcar.png');
+			background-repeat: no-repeat;
+			position:relative;
+			left: 350px;
+			top: 95px;
+			opacity:0.4;
+			width:10%;
+			height:5%;
+			}
+	  
+		li {
+				color: #09f;
+			}
+		#container
+		{
+			width:150px;
+			float:right;
+			text-align:center;
+			border-style:solid;
+			border-color:white;
+			margin:2px;			
+			top:250px;
+			position:absolute;
+			right:250px;
+		}
+		
+		
+		#nav > li > a{
+		cursor: url( css/knife.png),auto;
+		}
+		
+		#nav > li > ul > li > a {
+		cursor: url( css/knife.png),auto;
+		}
+				
+		
+	</style>
+	        <link href="css/layout.css" rel="stylesheet" type="text/css" />
+            <link href="css/menu.css" rel="stylesheet" type="text/css" />
+			
+			<script type="text/javascript" src="scripts/script.js"></script>
+		<script>
+			var c=0;
+			function DisplayTime(){
+				if (!document.all && !document.getElementById)
+					return
+				timeElement=document.getElementById? document.getElementById("curTime"): document.all.tick2
+				var CurrentDate=new Date()
+				var hours=CurrentDate.getHours()
+				var minutes=CurrentDate.getMinutes()
+				var seconds=CurrentDate.getSeconds()
+				var DayNight="PM"
+				if (hours<12) DayNight="AM";
+				if (hours>12) hours=hours-12;
+				if (hours==0) hours=12;
+				if (minutes<=9) minutes="0"+minutes;
+				if (seconds<=9) seconds="0"+seconds;
+				var currentTime=hours+":"+minutes+":"+seconds+" "+DayNight;
+				timeElement.innerHTML="<font style='font-family:verdana, arial,tahoma;font-size:12px;color:#E25984; font-weight:bold;'>"+currentTime+"</b>"
+				setTimeout("DisplayTime()",1000)
+			}
+			window.onload=DisplayTime
+		</script>
+</head>
+
+	<body onClick="" onLoad="">
+		<span id=curTime ></span>
+		<div class="custom">
+		<div class="container">
+			<ul id="nav">
+				    <li><a href="CSI Menu bar.html">Home</a></li>
+					
+					<li><a class="hsubs" href="map.html"> Map</a>
+					</li>
+					<li><a class="hsubs" href="evlab.html">Evidence Lab</a></li>
+					<li><a class="hsubs" href="credit.html">Site Credits</a></li>
+					
+					
+					<div id="csi"></div>
+				</ul>				
+       
+				<div id="menu" style="background-color:#191A1C;width:150px;float:right;text-align:center;border-style:solid; border-color:white;margin:5px;top:200px;position:absolute;right:250px;">
+					<p style = "color: white;">Evidence List</p>
+					<ul id="myList" style = "padding:5px;list-style:none;">
+						
+					</ul>
+					<input type = "button" onclick="submit_evid(31);window.location = './CSI Menu bar.html'" value="Submit" />
+				</div>
+				<div id="cdeath">
+					<div class="1" id="cdblastres" style="cursor:pointer;" onclick = "add_evid31(this)"  ><span style="display:none;">Residue</span></div>
+					<div class="2" id="cdcctv" style="cursor:pointer;" onclick = "add_evid31(this)" ><span style="display:none;">CCTV </span></div>
+					<div class="3" id="cdnameplate" style="cursor:pointer;" onclick = "add_evid31(this)" ><span style="display:none;">Number Plate</span></div>
+					<div class="4" id="cdcellphn" style="cursor:pointer;" onclick = "add_evid31(this)" ><span style="display:none;">Phone</span></div>
+					<div class="5" id="cdskid" style="cursor:pointer;" onclick = "add_evid31(this)" ><span style="display:none;">Tyre Marks</span></div>
+				</div>
+			</div>
+		</div> <!--end of division custom-->
+	</body>
+</html>

@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			body{
+				background-color:#212121;
+			} 
+
+			div#xyoffice{
+				
+				background:url('imagesofmap/XYoffice.jpg');
+				background-repeat:no-repeat;
+				background-position:center;
+				position:relative;
+				left:-150px;
+				height:500px;
+			}
+	
+			#xydoc{
+				background:url('psdedited/papers_doc.png');
+				background-repeat:no-repeat;
+				position:relative;
+				left: 260px;
+				top: 300px;
+				opacity:0.2;
+				width:5%;
+				height:5%;
+			}
+	 
+			#xycctv{
+				background:url('psdedited/cctv_xy.png');
+				background-repeat:no-repeat;
+				position:relative;
+				left: 200px;
+				top: 50px;
+				opacity:0.4;
+				width:10%;
+				height:10%;
+			}
+	 
+			#xyfingerprint{
+				background:url('psdedited/finger_print.png');
+				background-repeat:no-repeat;
+				position:relative;
+				left:340px;
+				top: 200px;
+				opacity:0.3;
+				width:10%;
+				height:10%;
+			}
+			
+			#xynote{
+				background:url('psdedited/notedoc.png');
+				background-repeat:no-repeat;
+				position:relative;
+				left:680px;
+				top: 240px;
+				opacity:0.1;
+				width:10%;
+				height:10%;
+			}
+	 	
+		    #xyaudio
+			{
+			background:url('psdedited/audio_tape.png');
+				background-repeat:no-repeat;
+				position:relative;
+				left:500px;
+				top: 200px;
+				opacity:0.3;
+				width:10%;
+				height:10%;
+			}
+			
+			#nav > li > a{
+		cursor: url( css/knife.png),auto;
+		}
+		
+		#nav > li > ul > li > a {
+		cursor: url( css/knife.png),auto;
+		}
+			
+			.custom{
+				cursor: url( css/knife.png),auto;
+			}
+			li{
+				color: #09f;
+				
+			}
+			li:hover {
+				text-decoration: none;
+			}	
+			a{
+				color: #09f;
+			}
+			a:hover {
+				text-decoration: none;	
+			}		
+		</style>
+		<link href="css/sidebar.css" rel="stylesheet" type="text/css" />
+		<link href="css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="css/menu.css" rel="stylesheet" type="text/css" />
+		<script type = "text/javascript" src = "scripts/script.js" ></script>
+		<script>
+			
+			function DisplayTime(){
+				if (!document.all && !document.getElementById)
+					return
+				timeElement=document.getElementById? document.getElementById("curTime"): document.all.tick2
+				var CurrentDate=new Date()
+				var hours=CurrentDate.getHours()
+				var minutes=CurrentDate.getMinutes()
+				var seconds=CurrentDate.getSeconds()
+				var DayNight="PM"
+				if (hours<12) DayNight="AM";
+				if (hours>12) hours=hours-12;
+				if (hours==0) hours=12;
+				if (minutes<=9) minutes="0"+minutes;
+				if (seconds<=9) seconds="0"+seconds;
+				var currentTime=hours+":"+minutes+":"+seconds+" "+DayNight;
+				timeElement.innerHTML="<font style='font-family:verdana, arial,tahoma;font-size:12px;color:#E25984; font-weight:bold;'>"+currentTime+"</b>"
+				setTimeout("DisplayTime()",1000)
+			}
+			window.onload=DisplayTime
+		</script>
+	</head>
+	<body onClick="" onload = "" >
+		<span id=curTime ></span>
+		<div class="custom">
+			<div class="container">
+				<ul id="nav">
+				    <li><a href="CSI Menu bar.html">Home</a></li>
+				
+					<li><a class="hsubs" href="map.html">The Map</a>
+						
+					</li>
+					<li><a class="hsubs" href="evlab.html">Evidence Lab</a></li>
+					<li><a href="credit.html">Site Credits</a></li>
+					<div id="csi"></div>
+				</ul>
+				<div id="menu" style="background-color:#191A1C;width:150px;float:right;text-align:center;border-style:solid; border-color:white;margin:5px;top:200px;position:absolute;right:250px;">
+					<p style = "color: white;">Evidence List</p>
+					<ul id="myList" style = "padding: 5px; list-style: none;">
+						
+					</ul>
+					<input type = "button" onclick="submit_evid(51);window.location='./CSI Menu bar.html';" value="Submit" />
+				</div>
+				<div id="xyoffice">
+					<div id="xydoc" class="1" style="cursor:pointer;" onclick = "add_evid51(this)"><span style="display:none;">Documents</span></div>
+					<div id="xycctv" class="2" style="cursor:pointer;" onclick = "add_evid51(this)"><span style="display:none;">CCTV</span></div>
+					<div id="xyfingerprint" class="3" style="cursor:pointer;" onclick = "add_evid51(this)"><span style="display:none;">Finger Print</span></div>
+					<div id="xynote" class="4" style="cursor:pointer;" onclick = "add_evid51(this)"><span style="display:none;">Note</span></div>
+					<div id="xyaudio" class="5" style="cursor:pointer;" onclick = "add_evid51(this)"><span style="display:none;">Audio Transmitter</span></div>
+				</div>
+			</div> <!--end of div container -->
+		</div> 
+	</body>
+</html>

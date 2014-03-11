@@ -1,0 +1,30 @@
+How Fingerprints are Collected
+
+Collecting Patent Prints
+
+Patent prints are collected using a fairly straightforward method: 
+photography. These prints are photographed in high resolution with a forensic measurement scale in the image for reference. Investigators can improve the quality of the images by using low-angle or alternate light sources and/or certain chemicals or dyes during photography, but this is usually not necessary.
+
+Collecting Latent Prints
+
+One of the most common methods for discovering and collecting 
+latent fingerprints is by dusting a smooth or nonporous surface with 
+fingerprint powder (black granular, aluminum flake, black magnetic, etc.). If 
+any prints appear, they are photographed as mentioned above and then lifted from 
+the surface with clear adhesive tape. The lifting tape is then placed on a latent 
+lift card to preserve the print.
+
+However, fingerprint powders can contaminate the evidence and ruin the 
+opportunity to perform other techniques that could turn up a hidden print or 
+additional information. Therefore, investigators may examine the area with an 
+alternate light source or apply cyanoacrylate (super glue) before using powders.
+
+Alternate Light Source (ALS): It is becoming more commonplace for investigators 
+to examine any likely surfaces (doors, doorknobs, windows, railings, etc.) with 
+an alternate light source. These are laser or LED devices that emit a particular
+ wavelength, or spectrum, of light. Some devices have different filters to provide 
+a variety of spectra that can be photographed or further processed with powders or 
+dye stains. For example, investigators may use a blue light with an orange filter 
+to find latent prints on desks, chairs, computer equipment or other objects at 
+the scene of a break-in.
+

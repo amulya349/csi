@@ -1,0 +1,32 @@
+<html>
+	<head>
+		<style>
+			body{margin:0;padding:0;}
+		</style>
+		<script>
+			function goNext()
+			{
+				localStorage.clear();
+				localStorage.flag11 = 0;
+				localStorage.flag21 = 0;
+				localStorage.flag31 = 0;
+				localStorage.flag32 = 0;
+				localStorage.flag41 = 0;
+				localStorage.flag51 = 0;
+				localStorage.link;
+				localStorage.level = 1;
+				window.location = './CSIintro.html';
+			}
+		</script>
+	</head>
+	<body>
+		<div style="position:absolute;height:100%;width:100%;display:table;">
+			<div style="position:relative;height:100%;width:100%;display:table-cell;vertical-align:middle;">
+				<div style="position:relative;height:40px;width:260px;margin:auto;display:block;">
+					<label for="link">Link</label> <input type="text" />
+					<input type="button" value="Play" onclick="goNext()" />
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

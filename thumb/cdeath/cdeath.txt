@@ -1,0 +1,5 @@
+-phone
+-cctv
+-numberplate
+-residue
+

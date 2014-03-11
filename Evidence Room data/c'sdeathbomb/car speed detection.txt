@@ -1,0 +1,22 @@
+A radar detector is an electronic device used by motorists to 
+detect if their speed is being monitored by police or law enforcement 
+using a radar gun. Most radar detectors are used so the driver can reduce 
+the car's speed before being ticketed for speeding. Only doppler radar-based 
+devices can be detected — other speed measuring devices including those using ANPR, 
+piezo sensors, and VASCAR technology cannot be detected. LIDAR devices require a 
+different type of sensor, although many modern detectors include LIDAR sensors. 
+Most of today's radar detectors detect signals 
+across a variety of wavelength bands: usually X, K, and Ka.
+
+
+One of the technologies that law enforcement agencies can use to measure the speed 
+of a moving vehicle uses doppler radar to beam a radio wave at the vehicle, and then 
+infer the vehicle's speed by measuring the Doppler effect-moderated change in the 
+reflected wave's frequency. Radar guns can be hand-held, vehicle mounted or mounted 
+on a fixed object, such as a traffic signal.
+Radar detectors use a superheterodyne receiver to detect these electromagnetic 
+emissions from the radar gun, and raise an alarm to notify the motorist when a 
+transmission is detected. False alarms can occur however due to the large number 
+of devices, such as automatic door openers (such as the ones at supermarkets) and 
+adaptive automotive cruise control, that operate in the same part of the electromagnetic
+ spectrum as radar guns.

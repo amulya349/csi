@@ -1,0 +1,3 @@
+-//Bullets in head and abdomen (indicate recent attack by gun)
+-//Wristwatch ( to find the encrypted video)
+-//fingerprint (mislead)

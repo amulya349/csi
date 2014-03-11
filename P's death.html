@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+body{
+    background-color:#212121;
+} 
+
+div#pdeath
+	 {
+	 
+	 background:url('imagesofmap/p1.jpg');
+	background-repeat:no-repeat;
+				background-position:center;
+				position:relative;
+				left:-15%;
+				top:10%;
+				height:500px;
+
+	 }
+	li {
+				color: #09f;
+				
+			}
+	 
+#pwiring{
+	 background:url('psdedited/wiringp.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left:540px;
+			top:200px;
+			opacity:0.3;
+			width:10%;
+			height:5%;
+	 
+	 }
+	 
+	 #ptire
+	 {
+	 background:url('psdedited/skidcar.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left: 300px;
+			top: 290px;
+			opacity:0.6;
+			width:10%;
+			height:5%;
+	 }
+	 
+	#pres
+	{
+	background:url('psdedited/blast_residue.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left:160px;
+			top: 250px;
+			opacity:0.6;
+			width:10%;
+			height:5%;
+	 }
+	
+	 #pdoc
+	{
+	background:url('psdedited/papers_doc.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left:680px;
+			top: 160px;
+			opacity:1.0;
+			width:10%;
+			height:5%;
+	 }
+	 
+	 #ptirepuncture
+	{
+	background:url('psdedited/landline_marker.png');
+			background-repeat:no-repeat;
+			position:relative;
+			left:610px;
+			top: 240px;
+			opacity:0.6;
+			width:10%;
+			height:5%;
+	 }
+	
+	#nav > li > a{
+		cursor: url( css/knife.png),auto;
+		}
+		
+		#nav > li > ul > li > a {
+		cursor: url( css/knife.png),auto;
+		}
+	
+
+     
+	 .custom{
+				cursor: url( css/knife.png),auto;
+			}
+			
+	
+	a {
+				color: #09f;
+			}
+			a:hover {
+				text-decoration: none;	
+				}
+</style>
+<link href="css/layout.css" rel="stylesheet" type="text/css" />
+ <link href="css/menu.css" rel="stylesheet" type="text/css" />
+<script type = "text/javascript" src = "scripts/script.js" ></script>
+		<script>
+			
+			function DisplayTime(){
+				if (!document.all && !document.getElementById)
+					return
+				timeElement=document.getElementById? document.getElementById("curTime"): document.all.tick2
+				var CurrentDate=new Date()
+				var hours=CurrentDate.getHours()
+				var minutes=CurrentDate.getMinutes()
+				var seconds=CurrentDate.getSeconds()
+				var DayNight="PM"
+				if (hours<12) DayNight="AM";
+				if (hours>12) hours=hours-12;
+				if (hours==0) hours=12;
+				if (minutes<=9) minutes="0"+minutes;
+				if (seconds<=9) seconds="0"+seconds;
+				var currentTime=hours+":"+minutes+":"+seconds+" "+DayNight;
+				timeElement.innerHTML="<font style='font-family:verdana, arial,tahoma;font-size:12px;color:#E25984; font-weight:bold;'>"+currentTime+"</b>"
+				setTimeout("DisplayTime()",1000)
+			}
+			window.onload=DisplayTime
+</script>
+</head>
+<body onClick="" onload = "" >
+	<span id=curTime ></span>
+	<div class="custom">
+		<div class="container">
+
+					 
+			
+				<ul id="nav">
+				    <li><a href="CSI Menu bar.html">Home</a></li>
+					
+					<li><a class="hsubs"href="map.html">The Map</a>
+					
+						
+					</li>
+					<li><a class="hsubs" href="evlab.html">Evidence Lab</a></li>
+					<li><a href="credit.html">Site Credits</a></li>
+					
+					<div id="csi"></div>
+				</ul>	
+				<div id="menu" style="background-color:#191A1C;width:150px;float:right;text-align:center;border-style:solid; border-color:white;margin:5px;top:200px;position:absolute;right:250px;">
+					<p style = "color: white;">Evidence List</p>
+					<ul id="myList" style = "padding:5px;list-style:none;">
+						
+					</ul>
+					<input type = "button" onclick="submit_evid(21);window.location='./CSI Menu bar.html';" value="Submit" />
+				</div>
+				<div id="pdeath">
+					<div id="pwiring" style="cursor:pointer;" class = "1" onclick = "add_evid21(this)"><span style="display:none;">Wiring</span></div>
+					<div id="ptire" style="cursor:pointer;" class = "2" onclick = "add_evid21(this)"><span style="display:none;">Tyre Marks</span></div>
+					<div id="pres" style="cursor:pointer;" class = "3" onclick = "add_evid21(this)"><span style="display:none;">Wreck</span></div>
+					<div id="pdoc" style="cursor:pointer;" class = "4" onclick = "add_evid21(this)"><span style="display:none;">Documents</span></div>
+					<div id="ptirepuncture" style="cursor:pointer;" class = "5" onclick = "add_evid21(this)"><span style="display:none;">Blood</span></div>
+				</div>
+			</div> <!--end of div container-->
+		</div><!--end of div custom-->
+	</body>
+</html>

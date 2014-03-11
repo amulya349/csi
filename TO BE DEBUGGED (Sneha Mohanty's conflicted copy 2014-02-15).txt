@@ -1,0 +1,27 @@
+- //XYoffice.html ( not functioning properly)---
+              pointer not  appearing on evidences
+
+- To increase opacity of evidences
+
+- To include questionnaire
+
+-// no padding in evlab.html (to be done)
+
+- Questionnaire button to appear at evlab, at end of game.
+
+-To  check once, by playing the game 
+
+-//On pic, the div names are coming in the sidebar,
+  instead of any sensible names
+
+- Timer absent on some pages
+
+-Doctor's clinic - to be added in level 2
+
+-Interview to be added in  Doctor's clinic.
+
+- To link Forensic reports to thumbnails on evlab.html
+
+
+------ALL THE BEST, DEAREST REETI, ANKI, SID, AMUL-COOL, 
+     AND MYSELF :P ----------------------------------------
